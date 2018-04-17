@@ -30,6 +30,7 @@ nav {
 	}
 }
 
+/*main container to show the cards*/
 .container {
 	overflow: auto;
 	display: flex;
@@ -39,7 +40,7 @@ nav {
 	box-sizing: border-box;
 	background-color: #FAFAFA;
 
-	.item {
+	.item { /*Each card is identified as an item*/
 		display: flex;
 		flex: 1 1 @flexwid;
 		max-width: @flexwid;
@@ -58,7 +59,7 @@ nav {
 		}
 
 
-		.item-content {
+		.item-content { /*Every Item has content such as type/caterogy/qty etc. */
 
 			padding: 16px;
 			word-wrap: break-word;
@@ -76,7 +77,7 @@ nav {
 	}
 }
 
-
+/*Just One media queries that handles how many cards can be in one row */
 
 @media only screen and (max-width: 698px) {
 

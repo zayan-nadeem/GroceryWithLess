@@ -10,8 +10,8 @@
 		<p>Grocery List</p>
 	</nav>
 
-
 	<div class="container">
+     <!-- Uses Angular ng-repeat directive to iterate over the Scope object to show the values -->
      <div ng-repeat="groceryitem in groceryList" class="item">
        <img ng-src="{{ groceryitem.category }}" alt="{{groceryitem.alt}}">
        <div class="item-content">

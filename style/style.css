@@ -20,6 +20,7 @@ nav p {
   letter-spacing: 0.005em;
   transition-duration: 200ms;
 }
+/*main container to show the cards*/
 .container {
   overflow: auto;
   display: flex;
@@ -30,6 +31,7 @@ nav p {
   background-color: #FAFAFA;
 }
 .container .item {
+  /*Each card is identified as an item*/
   display: flex;
   flex: 1 1 30%;
   max-width: 30%;
@@ -47,6 +49,7 @@ nav p {
   height: auto;
 }
 .container .item .item-content {
+  /*Every Item has content such as type/caterogy/qty etc. */
   padding: 16px;
   word-wrap: break-word;
 }
@@ -58,6 +61,7 @@ nav p {
 .container .item .item-content h2:hover {
   color: #68EFAD;
 }
+/*Just One media queries that handles how many cards can be in one row */
 @media only screen and (max-width: 698px) {
   nav p {
     font-size: 16px;
