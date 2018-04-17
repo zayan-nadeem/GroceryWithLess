@@ -1,0 +1,72 @@
+html {
+  font-family: "Istok Web", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+nav {
+  background-color: #7A1EA1;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+nav p {
+  margin-left: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.005em;
+  transition-duration: 200ms;
+}
+.container {
+  overflow: auto;
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+}
+.container .item {
+  display: flex;
+  flex: 1 1 30%;
+  max-width: 30%;
+  flex-direction: column;
+  max-height: 100%;
+  box-sizing: border-box;
+  margin: 8px;
+  box-shadow: 1px 1px 1px #D1C4E9;
+  background-color: #FFFFFF;
+}
+.container .item img {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+}
+.container .item .item-content {
+  padding: 16px;
+  word-wrap: break-word;
+}
+.container .item .item-content .title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+.container .item .item-content h2:hover {
+  color: #68EFAD;
+}
+@media only screen and (max-width: 698px) {
+  nav p {
+    font-size: 16px;
+  }
+  .container {
+    justify-content: space-evenly;
+  }
+  .container .item {
+    flex: 1 1 40%;
+    max-width: 40%;
+  }
+}

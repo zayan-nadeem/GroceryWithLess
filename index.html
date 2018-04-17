@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GList</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body ng-app="groceryApp" ng-controller="groceryCtrl">
+
+	<nav class="navbar">
+		<p>Grocery List</p>
+	</nav>
+
+
+	<div class="container">
+     <div ng-repeat="groceryitem in groceryList" class="item">
+       <img ng-src="{{ groceryitem.category }}" alt="{{groceryitem.alt}}">
+       <div class="item-content">
+           <h2>{{ groceryitem.item | uppercase}}</h2>
+           <p>Type: {{ " "+groceryitem.type }}</p>
+           <p>Brand: {{" " +groceryitem.brand }}</p>
+           <p> Quantity:{{ " " +groceryitem.qty }}</p>
+       </div>
+     </div>
+  </div>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+</body>
+</html>
